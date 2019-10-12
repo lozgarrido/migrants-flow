@@ -1,14 +1,16 @@
 import requests
 import pandas as pd
 
+
 def get_annual_asylum_stats(year, origin_country=None, asylum_country=None):
-    '''Returns a dicionary with asylum seekers stats in given year.
+    """Returns a dictionary with asylum seekers stats in given year.
 
     Args:
-        year
-        origin_country: origin country code or name (optional)
-        asylum_country: asylum country code or name (optional)
-    '''
+        :param year:
+        :param origin_country: (optional) origin country code or name
+        :param asylum_country: (optional) asylum country code or name
+        :return: 
+    """
 
     # Set API parameters
     year_parameter = '?year=' + str(year)
@@ -34,15 +36,17 @@ def get_annual_asylum_stats(year, origin_country=None, asylum_country=None):
 
     return annual_asylum_stats
 
+
 def asylum_stats_to_dataframe(first_year, last_year, origin_country=None, asylum_country=None):
-    '''Creates a dataframe with asylum seekers stats between given years.
+    """Creates a dataframe from asylum seekers stats between two years.
 
     Args:
-        first_year: beginning of period (included)
-        last_year: end of period (included)
-        origin_country: origin country code or name (optional)
-        asylum: asylum country code or name (optional)
-    '''
+        :param first_year: beginning of period, included
+        :param last_year: end of period, included
+        :param origin_country: (optional) origin country code or name
+        :param asylum_country: (optional) asylum country code or name
+        :return: dataframe with all the annual stats for the period.
+    """
 
     # Iterate over years period
     years_period = range(first_year, last_year + 1)
