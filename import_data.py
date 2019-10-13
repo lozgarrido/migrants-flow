@@ -1,5 +1,7 @@
 import requests
 import pandas as pd
+from countries_validation import get_country_code
+from countries_validation import check_country_code
 
 
 def get_annual_asylum_stats(year, origin_country=None, asylum_country=None):
