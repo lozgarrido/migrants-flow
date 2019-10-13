@@ -1,4 +1,4 @@
-*Warning: currently the API is down, so the project is not fully functional.*
+*Warning: currently the API is down, so the project is paused.*
 
 # Refugees migratory flows
 A project about asylum seekers in Europe
