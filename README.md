@@ -29,7 +29,7 @@ The following APIs are used:
 
 - **main.ipynb**: Jupyter file with a project visualization
 - **import_data.py**: Downloads data from UNHCR API
-- **countries_validation.ipynb**: Converts countries into compatible codes with UNHCR API
+- **countries_validation.ipynb**: Converts input countries into codes compatible with UNHCR API
 
 Folders:
 
